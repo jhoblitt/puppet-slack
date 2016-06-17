@@ -18,13 +18,13 @@ matrix:
       sudo: required
       services: docker
       env: BEAKER_set="fedora-23-docker"
-      script: bundle exec rake acceptance
+      script: bundle exec rake beaker
       bundler_args: --without development
     - rvm: '2.1'
       sudo: required
       services: docker
       env: BEAKER_set="ubuntu-14.04-docker"
-      script: bundle exec rake acceptance
+      script: bundle exec rake beaker
       bundler_args: --without development
   fast_finish: true
 notifications:
