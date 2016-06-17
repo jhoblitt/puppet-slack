@@ -1,5 +1,5 @@
 Puppet slack Module
-=========================
+===================
 
 [![Build Status](https://travis-ci.org/jhoblitt/puppet-slack.png)](https://travis-ci.org/jhoblitt/puppet-slack)
 
@@ -19,19 +19,22 @@ Puppet slack Module
 Overview
 --------
 
-
-Description
------------
-
+Manage slack desktop client
 
 Usage
 -----
 
+```puppet
+include ::slack
+```
 
 Limitations
 -----------
 
 ### Tested Platforms
+
+* Fedora 23
+* Ubuntu 14.04
 
 
 Versioning
@@ -70,3 +73,5 @@ Contributing
 
 See Also
 --------
+
+* https://slack.com/downloads

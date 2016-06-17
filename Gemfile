@@ -14,8 +14,7 @@ end
 
 group :development, :test do
   gem 'rake',                     :require => false
-  # https://github.com/rspec/rspec-core/issues/1864
-  gem 'rspec', '< 3.2.0', {"platforms"=>["ruby_18"]}
+  gem 'rspec', '~> 3.2',          :require => false
   gem 'puppetlabs_spec_helper',   :require => false
   gem 'puppet-lint', '>= 1.1.0',  :require => false
   gem 'puppet-syntax',            :require => false
@@ -30,6 +29,7 @@ group :beaker do
   gem 'beaker-rspec',             :require => false
   gem 'pry',                      :require => false
   gem 'puppet-blacksmith',        :require => false
+  gem 'beaker-puppet_install_helper', :require => false
 end
 
 # vim:ft=ruby

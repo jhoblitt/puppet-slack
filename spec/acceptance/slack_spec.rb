@@ -3,10 +3,6 @@ require 'spec_helper_acceptance'
 describe 'slack class' do
   describe 'running puppet code' do
     pp = <<-EOS
-      if $::osfamily == 'RedHat' {
-        class { 'epel': } -> Class['slack']
-      }
-
       include ::slack
     EOS
 
